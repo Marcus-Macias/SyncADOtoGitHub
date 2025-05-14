@@ -10,5 +10,5 @@ jobs:
       - name: Check out Repo
         uses: actions/checkout@v2
       - run: |
-          ./SynADOtoGitHub.pl1 -GitHubDestination ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT}}
+          ./SynADOtoGitHub.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT}}
       
